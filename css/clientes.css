@@ -1,0 +1,25 @@
+.wrapper-clientes-ver{
+    background-image: url("../imagenes/bg/bg-clientes-black.jpg");
+}
+
+.image-grid{
+    margin: 10px;
+}
+
+.c-title-section{
+    margin-bottom: 30px;
+    font-size: 43px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+}
+
+.services-section img {
+    margin: auto;
+    width: 190px;
+    display: block;
+
+    box-shadow: 6px 7px 10px 0px rgba(0,0,0,0.75);
+}

@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/07/2018, 03:48:57 PM
+    Author     : johan
+*/
+@font-face {
+  font-family: 'Acens';
+  src: url('../fonts/acens/acens.eot');
+  src: local('☺'), 
+       url('../fonts/acens/acens.woff') format('woff'), 
+       url('../fonts/acens/acens.ttf') format('truetype'), 
+       url('../fonts/acens/acens.svg') format('svg');
+}
+/*h1,h2,h3,h4,h5,h6{
+	font-family: 'Acens';
+	color: #000;
+	letter-spacing: 1px;
+}*/
+@import animation.css;
+header{
+    min-height: 90px;
+}
+.main-color{
+	color: rgb(157,10,15);
+}
+header .navbar{
+  max-width: 100vw;
+	/*border-bottom: 1px solid;*/
+	/*box-shadow: 6px -5px 32px 5px #000;*/
+    box-shadow: -1px 3px 10px 0px rgba(0,0,0,0.75);
+
+}
+body{
+    overflow: hidden !important;
+}
+
+/*LOADER*/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: 50% 50% no-repeat rgb(255,255,255);
+    opacity: .98;
+}
+
+#heart{
+  display: flex;
+  align-items: center;
+}
+
+ #heart img{
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+ }
+
+ @keyframes heartFadeInOut {
+  0% {transform: scale(1);}
+  25% {transform: scale(.97);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.1);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
+
+#heart img.bottom { 
+  animation-name: heartFadeInOut; 
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}

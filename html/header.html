@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CSI Consultores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Rajdhani" rel="stylesheet">
+    <link rel="icon" href="/imagenes/icono.png">
+    <script type="text/javascript" async="" src="js/jquery.min.js"></script>
+    <script type="text/javascript" async="" src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" async="" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset='utf-8'   async="" src="js/aos.js"></script>
+    <script type="text/javascript" charset='utf-8' src="js/scrolling-nav.js"></script>
+    <!-- <script type="text/javascript" async="" src="js/jquery.easing.min.js"></script> -->
+    <script>
+    if(!window.jQuery)
+    {
+
+        
+       var easing = document.createElement('script');
+       easing.type = "text/javascript";
+       easing.src = "js/jquery.easing.min.js";
+       document.getElementsByTagName('head')[0].appendChild(easing);
+
+       // var nav = document.createElement('script');
+       // nav.type = "text/javascript";
+       // nav.src = "js/scrolling-nav.js";
+       // document.getElementsByTagName('head')[0].appendChild(nav);
+
+
+       
+    }
+</script>
+
+</head>
+
+<body id="inicio" data-spy="scroll" data-target=".navbar" data-offset="300">
+<!-- <div id="heart" class="loader">
+    <img class="bottom img" src="imagenes/logo.png" width="150px">
+</div> -->
+<header>
+    <script>
+        
+        window.onload = function() { 
+          AOS.init();
+          $( "#mainNav" ).removeClass( "d-none" );
+          $( document ).ready(function() {
+            $(".loader").delay(700).fadeOut("slow");
+
+            // scrool animation 
+            
+
+            $( "a.nav-item").click(function(event) {
+                event.preventDefault();
+                var idElemento = $(this).attr('href');
+                if (idElemento != null) {
+                    idElemento = idElemento.substr(1); ;
+                    var elemento = document.getElementById(idElemento);
+                    var elementoPos = elemento.offsetTop;
+                    $("html, body").animate({
+                        scrollTop: elementoPos+'px'
+                    }, 1500);     
+                }
+                
+            });
+          });
+          
+        };
+    </script>
+    <nav id="mainNav" class="d-none navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="js-scroll-trigger" href=".">
+                <img class="navbar-brand" src="imagenes/logo.png" alt="CSI Consultores" width="175" height="76">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <!--Las secciones estan por verse-->
+                    <a class="nav-item nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-item nav-link" href="#quienes-somos">Empresa</a>
+                    <a class="nav-item nav-link" href="#nuestros-clientes">Nuestros Clientes</a>
+                    <a class="nav-item nav-link" href="#alianzas">Alianzas</a>
+                    <a class="nav-item nav-link" href="#contactenos">Contáctenos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

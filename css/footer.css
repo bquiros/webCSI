@@ -1,0 +1,89 @@
+/* Codigo para el estilo del footer*/
+#page-footer {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 36px;
+}
+
+#page-footer .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#page-footer .row {
+    margin-bottom: 20px;
+}
+
+#page-footer .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#page-footer .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#page-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#page-footer h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#page-footer h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#page-footer a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#page-footer a:hover,
+#page-footer a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    #page-footer {
+        text-align: center;
+    }
+}
+
+#page-footer .info{
+    color: #afb0b1;
+}
+
+
+.image
+{
+    margin: auto;
+}
+
+/* Codigo para el que el footer se quede al final de la pagina*/
+
+
+.logo-container img{
+	max-width: 200px;
+	margin-top: 6px;
+    margin-bottom: 20px;
+}
+.mapa-ubicacion iframe{
+	max-width: 100%;
+}
+.mapa-ubicacion .modal-title,
+.mapa-ubicacion p{
+	color: #000;
+}
