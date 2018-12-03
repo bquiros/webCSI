@@ -116,7 +116,7 @@ body{
 }
 .wrapper-quienes-somos{
 	background-image: url("../imagenes/bg/bg-quienes-somos.jpg");
-	background-position: center
+	background-position: center;	
 }
 .wrapper-clientes{
 	background-image: url("../imagenes/bg/bg-nuestros-clientes.jpg");
